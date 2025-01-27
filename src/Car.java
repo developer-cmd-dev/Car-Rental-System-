@@ -12,6 +12,8 @@ public class Car {
         this.type = type;
     }
 
+
+
     public int calculatePrice(int days){
         return  days*dayCharge;
     }
@@ -32,12 +34,16 @@ public class Car {
         return type;
     }
 
-    public boolean isAvailable() {
+    public boolean getIsAvailable() {
         return isAvailable;
     }
 
     public void rent(){
         isAvailable = false;
+    }
+
+    public void returnCar(){
+        isAvailable = true;
     }
 
 
